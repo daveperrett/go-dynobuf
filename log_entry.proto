@@ -3,7 +3,6 @@ syntax = "proto3";
 package dynobuf;
 
 option java_package = "io.dynomatic.protobuf";
-option java_outer_classname = "LogEntry";
 
 message LogEntry {
   string id       = 1;
