@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package dynobuf;
+
+option java_package = "io.dynomatic.protobuf";
+option java_outer_classname = "LogEntry";
+
+message LogEntry {
+  string id       = 1;
+  string database = 2;
+  string process  = 3;
+  int64 timestamp = 4;
+  string data     = 5;
+}

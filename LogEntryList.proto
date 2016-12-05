@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package dynobuf;
+
+import "LogEntry.proto";
+
+option java_package = "io.dynomatic.protobuf";
+option java_outer_classname = "LogEntryList";
+
+message LogEntryList {
+  repeated LogEntry entries = 1;
+}
