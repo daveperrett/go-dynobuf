@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package dynobuf;
+
+option java_package = "io.dynomatic.protobuf";
+option java_outer_classname = "EntryList";
+
+message EntryList {
+  message Entry {
+    string id       = 1;
+    string database = 2;
+    string process  = 3;
+    int64 timestamp = 4;
+    string data     = 5;
+  }
+
+  repeated Entry entries = 6;
+}
