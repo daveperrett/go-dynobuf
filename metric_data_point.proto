@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dynobuf;
+
+option java_package = "io.dynomatic.protobuf";
+
+message RawDataPoint {
+  string customer_id = 1;
+  string process     = 2;
+  string cluster     = 3;
+  string metric      = 4;
+  string operation   = 5;
+  double value       = 6;
+  int64 timestamp    = 7;
+}
