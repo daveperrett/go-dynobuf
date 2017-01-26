@@ -9,11 +9,13 @@ It is generated from these files:
 	log_entry.proto
 	log_entry_list.proto
 	metric_data_point.proto
+	metric_data_point_list.proto
 
 It has these top-level messages:
 	LogEntry
 	LogEntryList
-	RawDataPoint
+	MetricDataPoint
+	MetricDataPointList
 */
 package dynobuf
 
