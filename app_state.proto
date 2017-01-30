@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package dynobuf;
+
+option java_package = "io.dynomatic.protobuf";
+
+message AppState {
+  string application_id = 1;
+  int64 total           = 2;
+}
