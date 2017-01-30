@@ -5,7 +5,7 @@ package dynobuf;
 option java_package = "io.dynomatic.protobuf";
 
 message MetricDataPoint {
-  string application_id       = 1;
+  string application_id    = 1;
   string process           = 2;
   string cluster           = 3;
   string metric            = 4;

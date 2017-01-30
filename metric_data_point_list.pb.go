@@ -21,7 +21,7 @@ type MetricDataPointList struct {
 func (m *MetricDataPointList) Reset()                    { *m = MetricDataPointList{} }
 func (m *MetricDataPointList) String() string            { return proto.CompactTextString(m) }
 func (*MetricDataPointList) ProtoMessage()               {}
-func (*MetricDataPointList) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0} }
+func (*MetricDataPointList) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
 
 func (m *MetricDataPointList) GetPoints() []*MetricDataPoint {
 	if m != nil {
@@ -34,9 +34,9 @@ func init() {
 	proto.RegisterType((*MetricDataPointList)(nil), "dynobuf.MetricDataPointList")
 }
 
-func init() { proto.RegisterFile("metric_data_point_list.proto", fileDescriptor3) }
+func init() { proto.RegisterFile("metric_data_point_list.proto", fileDescriptor4) }
 
-var fileDescriptor3 = []byte{
+var fileDescriptor4 = []byte{
 	// 153 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0x92, 0xc9, 0x4d, 0x2d, 0x29,
 	0xca, 0x4c, 0x8e, 0x4f, 0x49, 0x2c, 0x49, 0x8c, 0x2f, 0xc8, 0xcf, 0xcc, 0x2b, 0x89, 0xcf, 0xc9,
