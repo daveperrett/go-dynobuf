@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package dynobuf;
+
+option java_package = "io.dynomatic.protobuf";
+
+message MetricState {
+  int64 timestamp          = 1;
+  string application_id    = 2;
+  string process           = 3;
+  string cluster           = 4;
+  string metric            = 5;
+  int64  num_values        = 6;
+  double sum               = 7;
+  double min               = 8;
+  double max               = 9;
+  double sum_of_squares    = 10;
+  map<string, string> tags = 11;
+}

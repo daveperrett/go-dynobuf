@@ -11,6 +11,7 @@ It is generated from these files:
 	log_entry_list.proto
 	metric_data_point.proto
 	metric_data_point_list.proto
+	metric_state.proto
 
 It has these top-level messages:
 	AppState
@@ -18,6 +19,7 @@ It has these top-level messages:
 	LogEntryList
 	MetricDataPoint
 	MetricDataPointList
+	MetricState
 */
 package dynobuf
 
