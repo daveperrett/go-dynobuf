@@ -31,7 +31,7 @@ type MetricState struct {
 func (m *MetricState) Reset()                    { *m = MetricState{} }
 func (m *MetricState) String() string            { return proto.CompactTextString(m) }
 func (*MetricState) ProtoMessage()               {}
-func (*MetricState) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
+func (*MetricState) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0} }
 
 func (m *MetricState) GetTags() map[string]string {
 	if m != nil {
@@ -44,9 +44,9 @@ func init() {
 	proto.RegisterType((*MetricState)(nil), "dynobuf.MetricState")
 }
 
-func init() { proto.RegisterFile("metric_state.proto", fileDescriptor5) }
+func init() { proto.RegisterFile("metric_state.proto", fileDescriptor3) }
 
-var fileDescriptor5 = []byte{
+var fileDescriptor3 = []byte{
 	// 323 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0x4c, 0x91, 0x4d, 0x4b, 0xf3, 0x40,
 	0x14, 0x85, 0x49, 0xd3, 0x8f, 0x37, 0xb7, 0x7d, 0x8b, 0x0c, 0x7e, 0x0c, 0xa2, 0x52, 0x44, 0xa1,

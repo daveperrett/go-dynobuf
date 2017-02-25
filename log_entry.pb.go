@@ -2,6 +2,21 @@
 // source: log_entry.proto
 // DO NOT EDIT!
 
+/*
+Package dynobuf is a generated protocol buffer package.
+
+It is generated from these files:
+	log_entry.proto
+	log_entry_list.proto
+	metric_data_point.proto
+	metric_state.proto
+
+It has these top-level messages:
+	LogEntry
+	LogEntryList
+	MetricDataPoint
+	MetricState
+*/
 package dynobuf
 
 import proto "github.com/golang/protobuf/proto"
@@ -12,6 +27,12 @@ import math "math"
 var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
+
+// This is a compile-time assertion to ensure that this generated file
+// is compatible with the proto package it is being compiled against.
+// A compilation error at this line likely means your copy of the
+// proto package needs to be updated.
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 type LogEntry struct {
 	ApplicationId string `protobuf:"bytes,1,opt,name=application_id,json=applicationId" json:"application_id,omitempty"`
@@ -24,15 +45,15 @@ type LogEntry struct {
 func (m *LogEntry) Reset()                    { *m = LogEntry{} }
 func (m *LogEntry) String() string            { return proto.CompactTextString(m) }
 func (*LogEntry) ProtoMessage()               {}
-func (*LogEntry) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
+func (*LogEntry) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{0} }
 
 func init() {
 	proto.RegisterType((*LogEntry)(nil), "dynobuf.LogEntry")
 }
 
-func init() { proto.RegisterFile("log_entry.proto", fileDescriptor1) }
+func init() { proto.RegisterFile("log_entry.proto", fileDescriptor0) }
 
-var fileDescriptor1 = []byte{
+var fileDescriptor0 = []byte{
 	// 180 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0xe2, 0xcf, 0xc9, 0x4f, 0x8f,
 	0x4f, 0xcd, 0x2b, 0x29, 0xaa, 0xd4, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x62, 0x4f, 0xa9, 0xcc,

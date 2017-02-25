@@ -21,7 +21,7 @@ type LogEntryList struct {
 func (m *LogEntryList) Reset()                    { *m = LogEntryList{} }
 func (m *LogEntryList) String() string            { return proto.CompactTextString(m) }
 func (*LogEntryList) ProtoMessage()               {}
-func (*LogEntryList) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
+func (*LogEntryList) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
 
 func (m *LogEntryList) GetEntries() []*LogEntry {
 	if m != nil {
@@ -34,9 +34,9 @@ func init() {
 	proto.RegisterType((*LogEntryList)(nil), "dynobuf.LogEntryList")
 }
 
-func init() { proto.RegisterFile("log_entry_list.proto", fileDescriptor2) }
+func init() { proto.RegisterFile("log_entry_list.proto", fileDescriptor1) }
 
-var fileDescriptor2 = []byte{
+var fileDescriptor1 = []byte{
 	// 144 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0x12, 0xc9, 0xc9, 0x4f, 0x8f,
 	0x4f, 0xcd, 0x2b, 0x29, 0xaa, 0x8c, 0xcf, 0xc9, 0x2c, 0x2e, 0xd1, 0x2b, 0x28, 0xca, 0x2f, 0xc9,
