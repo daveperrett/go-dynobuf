@@ -11,7 +11,7 @@ message MetricState {
   string cluster           = 4;
   string metric            = 5;
   string operation         = 6;
-  map<string, string> tags = 7;
+  string tags              = 7;
   int64  num_values        = 8;
   double sum               = 9;
   double min               = 10;
