@@ -11,6 +11,6 @@ message MetricDataPoint {
   string metric            = 4;
   string operation         = 5;
   double value             = 6;
-  map<string, string> tags = 7;
+  string tags              = 7;
   int64 timestamp          = 8;
 }
