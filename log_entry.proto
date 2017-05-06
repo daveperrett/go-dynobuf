@@ -6,8 +6,7 @@ option java_package = "io.dynomatic.protobuf";
 
 message LogEntry {
   string application_id = 1;
-  string database       = 2;
-  string process        = 3;
-  int64 timestamp       = 4;
-  string data           = 5;
+  string process        = 2;
+  int64 timestamp       = 3;
+  string data           = 4;
 }
